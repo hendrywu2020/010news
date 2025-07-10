@@ -9,7 +9,7 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "post"
+  - name: "post" # 确保此名称唯一
     label: "文章"
     folder: "content/posts"
     create: true
