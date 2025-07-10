@@ -7,34 +7,5 @@
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
-  <script>
-    window.CMS.init({
-      config: {
-        backend: {
-          name: 'github',
-          repo: 'hendrywu2020/010news',
-          branch: 'master',
-          auth_type: 'implicit',
-          app_id: 'Ov23liDD2cc4TjIsmKnn'
-        },
-        media_folder: 'static/images/uploads',
-        public_folder: '/images/uploads',
-        collections: [
-          {
-            name: 'post', // 確保 'name' 是唯一的
-            label: '文章',
-            folder: 'content/posts',
-            create: true,
-            fields: [
-              { label: '標題', name: 'title', widget: 'string' },
-              { label: '發佈日期', name: 'date', widget: 'datetime' },
-              { label: '內文', name: 'body', widget: 'markdown' }
-            ]
-          }
-        ]
-      }
-    });
-  </script>
 </body>
 </html>
