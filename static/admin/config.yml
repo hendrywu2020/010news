@@ -2,8 +2,9 @@ backend:
   name: github
   repo: hendrywu2020/010news
   branch: master
-  auth_type: implicit
-  app_id: Ov23liDD2cc4TjIsmKnn  # 替换为您的 Client ID
+  auth_type: pkce-implicit  # 使用更安全的 PKCE 方式
+  app_id: Ov231iDD2cc4TjIsmKnn
+  base_url: https://010news.pages.dev
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
