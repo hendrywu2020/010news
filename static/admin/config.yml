@@ -1,6 +1,9 @@
 backend:
-  name: vercel
+  name: github
   repo: hendrywu2020/010news
+  branch: master
+  base_url: https://010news.pages.dev
+  auth_endpoint: /api/auth
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
