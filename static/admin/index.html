@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>Content Manager</title>
-
-  <!-- 加载 Decap CMS 主程序 -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <!-- 加载 Vercel 认证的模块 -->
-  <script src="https://unpkg.com/decap-cms-backend-vercel@^3.0.0/dist/decap-cms-backend-vercel.js"></script>
 </head>
 <body>
+  <!-- 加载 Decap CMS 主程序 -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <!-- 加载 Vercel 认证模块 -->
+  <script src="https://unpkg.com/decap-cms-backend-vercel@^3.0.0/dist/decap-cms-backend-vercel.js"></script>
+
+  <script>
+    // 关键：将 Vercel 认证模块注册到主程序中
+    CMS.registerBackend('vercel', VercelBackend);
+    // 关键：初始化 CMS
+    CMS.init();
+  </script>
 </body>
 </html>
