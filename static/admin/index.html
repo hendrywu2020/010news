@@ -3,20 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
   <title>Content Manager</title>
 </head>
 <body>
-  <!-- 加载 Decap CMS 主程序 -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <!-- 加载 Vercel 认证模块 -->
-  <script src="https://unpkg.com/decap-cms-backend-vercel@^3.0.0/dist/decap-cms-backend-vercel.js"></script>
-
   <script>
-    // 关键：将 Vercel 认证模块注册到主程序中
-    CMS.registerBackend('vercel', VercelBackend);
-    // 关键：初始化 CMS
-    CMS.init();
+    window.CMS.init({
+      config: {
+        backend: {
+          name: 'github',
+          repo: 'hendrywu2020/010news',
+          branch: 'master',
+          base_url: 'https://010news.vercel.app', // <-- 已為您填寫
+          auth_endpoint: 'api/auth'
+        },
+        media_folder: 'static/images/uploads',
+        public_folder: '/images/uploads',
+        collections: [
+          {
+            name: 'post',
+            label: '文章',
+            folder: 'content/posts',
+            create: true,
+            fields: [
+              { label: '標題', name: 'title', widget: 'string' },
+              { label: '發佈日期', name: 'date', widget: 'datetime' },
+              { label: '內文', name: 'body', widget: 'markdown' }
+            ]
+          }
+        ]
+      }
+    });
   </script>
 </body>
 </html>
