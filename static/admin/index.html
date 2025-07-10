@@ -14,15 +14,16 @@
         backend: {
           name: 'github',
           repo: 'hendrywu2020/010news',
-          branch: 'master', // <-- 已為您修正為 master
+          branch: 'master',
           auth_type: 'implicit',
           app_id: 'Ov23liDD2cc4TjIsmKnn'
         },
         media_folder: 'static/images/uploads',
         public_folder: '/images/uploads',
+        // --- 已為您清理此區塊 ---
         collections: [
           {
-            name: 'post',
+            name: 'post', // 確保 'name' 是唯一的
             label: '文章',
             folder: 'content/posts',
             create: true,
