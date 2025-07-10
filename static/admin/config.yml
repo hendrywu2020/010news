@@ -3,13 +3,13 @@ backend:
   repo: hendrywu2020/010news
   branch: master
   auth_type: implicit
-  app_id: Ov23liDD2cc4TjIsmKnn
+  app_id: Ov23liDD2cc4TjIsmKnn  # 替换为您的 Client ID
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "post" # 确保此名称唯一
+  - name: "post"
     label: "文章"
     folder: "content/posts"
     create: true
