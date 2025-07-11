@@ -10,16 +10,16 @@
   {{ $section_count := len $section }}
 
   {{ if and ($show_recent_posts) (compare.Ge $section_count 1) }}
-    <!-- 修改這裡：從 w-100 w-70-ns center 改為 w-100 ml0 mr-auto -->
-    <div class="pt0 w-100 ml0 mr-auto">
+    <!-- 修改這裡：調整頂部間距為 pt3，確保在「以」字下方 -->
+    <div class="pt3 w-100 ml0 mr-auto" style="margin-top: -60px;">
       {{ $n_posts := $.Param "recent_posts_number" | compare.Default 3 }}
 
-      <!-- 修改這裡：從 w-100 mw8 改為 w-70 mw8 -->
-      <section class="w-70 mw8">
+      <!-- 修改這裡：調整寬度並確保靠左 -->
+      <section class="w-70 mw7 ml3">
         {{/* Range through the first $n_posts items of the section */}}
         {{ range (collections.First $n_posts $section) }}
-          <!-- 修改這裡：從 w-100 mb4 改為 w-100 mb4 ml4 -->
-          <div class="w-100 mb4 ml4 relative">
+          <!-- 修改這裡：增加左邊距，減少底部邊距 -->
+          <div class="w-100 mb3 ml4 relative">
             {{ .Render "summary-with-image" }}
           </div>
         {{ end }}
