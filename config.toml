@@ -1,0 +1,5 @@
+baseURL = "https://010news.pages.dev/"
+languageCode = "zh-cn"
+title = "風向 pulse"
+theme = "ananke"
+[params]

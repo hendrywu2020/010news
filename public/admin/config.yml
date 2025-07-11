@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: hendrywu2020/010news
+  branch: master
+  base_url: https://010news.pages.dev
+  auth_endpoint: /api/auth
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "post"
+    label: "文章"
+    folder: "content/posts"
+    create: true
+    fields:
+      - { label: "標題", name: "title", widget: "string" }
+      - { label: "發佈日期", name: "date", widget: "datetime" }
+      - { label: "內文", name: "body", widget: "markdown" }

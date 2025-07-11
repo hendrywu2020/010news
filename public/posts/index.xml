@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>風向 Pulse</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on 風向 Pulse</description>
+    <title>Posts on 風向 Pulse</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on 風向 Pulse</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Thu, 10 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>示例文章</title>
       <link>http://localhost:1313/posts/20250710-ltnews/</link>

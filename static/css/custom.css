@@ -1,0 +1,23 @@
+body {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+/* 覆蓋 Ananke 主題首頁 hero 部分背景色 */
+.hero,
+#hero,
+header.site-header {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+}
+
+a {
+    color: #0000ee !important;
+}
+a:hover {
+    color: #551a8b !important;
+}

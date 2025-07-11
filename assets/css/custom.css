@@ -1,0 +1,9 @@
+body, header, footer, main {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 这将确保所有文本，包括链接，都以黑色显示 */
+* {
+  color: #000000 !important;
+}
