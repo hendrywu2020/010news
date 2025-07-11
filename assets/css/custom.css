@@ -1,9 +1,13 @@
-body, header, footer, main {
-  background-color: #ffffff !important;
-  color: #000000 !important;
+/* Improve reading experience in post content */
+.post-content {
+  line-height: 1.8; /* 增加行距，讓文字有呼吸感 */
+  text-align: justify; /* 文字兩端對齊，更整潔 */
+  -webkit-hyphens: auto; /* 允許在適當位置自動斷詞（針對西文） */
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
-/* 这将确保所有文本，包括链接，都以黑色显示 */
-* {
-  color: #000000 !important;
+/* Add space between paragraphs */
+.post-content p {
+  margin-bottom: 1.5em; /* 增加段落之間的垂直距離 */
 }

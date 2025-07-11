@@ -1,0 +1,9 @@
+<h3>歷史文章</h3>
+<ul class="list pl0">
+  {{ $pages := where .Site.RegularPages "Section" "posts" }}
+  {{ range first 5 $pages }}
+    <li class="w-100 mb2">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+</ul>

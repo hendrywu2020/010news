@@ -50,7 +50,7 @@
         <span class="f6 mv4 dib tracked"> - {{ lang.Translate "wordCount" .WordCount }} </span>
       {{ end }}
     </header>
-    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | compare.Default "serif"}} f4 nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }} pl5-l w-two-thirds-l">
+    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | compare.Default "serif"}} f4 nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }} pl5-l w-two-thirds-l post-content">
       {{- .Content -}}
       {{- partials.Include "tags.html" . -}}
       <div class="mt6 instapaper_ignoref">
@@ -63,8 +63,8 @@
       </div>
     </div>
 
-    <aside class="w-30-l mt6-l">
-      {{- partials.Include "menu-contextual.html" . -}}
+    <aside class="w-30-l mt6-l dn db-l">
+      {{- partials.Include "sidebar-recent.html" . -}}
     </aside>
 
   </article>

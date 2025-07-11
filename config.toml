@@ -3,3 +3,4 @@ languageCode = "zh-cn"
 title = "風向 pulse"
 theme = "ananke"
 [params]
+custom_css = ["css/custom.css"]
